@@ -11,9 +11,13 @@ The figure shows the position of the 25 joints along the X, Y and Z axes for a f
 the x coordinate of joint i at frame f, max(X) the maximum value of X at this frame and min(X) the minimum value of X at this frame.
 
 Using this algorithm, one can transform the coordinates of the joints into an RGB image that the rows correspond to the joints and the columns correspond to the frames. For example, the file S001C001P001R001A001.skeleton contains 103 frames, we can output an image with dimension 25*103*3:
+
 ![image](https://user-images.githubusercontent.com/105889748/216826824-c0e8a279-3dd6-4416-be6a-86df133cafb2.png)
+
 Once we get the RGB image, we need to resize it into a square in order to feed into the neural network model in the later step. We have chosen the 55*55*3 dimension for all the images so we have to stretch the rows and crush the original image columns. To do this, we gave back the indexes for the rows and the columns.
-We obtain the resized image Figure 5. of size 55*55*3.
+
+We obtain the resized image with the size of 55*55*3.
+
 ![image](https://user-images.githubusercontent.com/105889748/216826911-7ec61f41-7add-4426-b0e7-4fb9510705c0.png)
 
 ## Recognition of the movements by convelitional neural networks
