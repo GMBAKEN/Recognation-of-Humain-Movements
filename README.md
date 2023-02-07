@@ -1,4 +1,4 @@
-# Recognation-of-Humain-Movements
+# Recognation-of-Humain-Movements by Deep learning
 I have used the dataset NTU RGB +D to recognize the humain movements.
 
 The goal of this project is to recognize human actions by computer vision. For this we will use the NTU RGB+D dataset and we will perform learning and predictions using pre-trained convolutional neural networks on the ImageNet dataset.
